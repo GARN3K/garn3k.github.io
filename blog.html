@@ -1,0 +1,19 @@
+---
+layout: default
+title: Blog
+---
+
+<h1>Blog</h1>
+
+{% for post in site.blog %}
+
+<div>
+  <a href="{{ site.path }}{{post.url}}">
+    <span class="post-date-link">{{ post.date | date: "%b %-d, %Y" }} </span> »
+    <span class='post-title'>{{ post.title }}</span>
+  </a>
+</div>
+
+{% endfor %}
+
+

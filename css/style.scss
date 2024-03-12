@@ -1,0 +1,452 @@
+---
+###########
+# note: will result in an all-in-one-file stylesheet e.g. style.css
+###########
+---
+
+
+///////////////////////////////////////
+// css theme variables / settings
+@import "settings";
+
+@import "syntax.css";
+
+@import url('https://fonts.googleapis.com/css?family=Overpass');
+
+html {
+  font-family: $font-family;
+  font-size:   20px;
+  line-height: 1.5;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color:            $body-color;
+  background-color: $body-background-color;
+}
+
+//////////////
+// Links
+
+a {
+  color:           $link-color;
+  text-decoration: none;
+
+  strong {
+    color: inherit;
+  }
+  
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+
+////////////////////////////
+// Headings
+//Page start
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom:  .5rem;
+  font-weight:    bold;
+  line-height:    1.25;
+  color:          $headings-color;
+  text-rendering: optimizeLegibility;
+}
+h1 {
+  // margin-top: -0.3rem;
+  font-size: 2rem;
+}
+h2 {
+  margin-top: 1.5em;
+  font-size: 1.5rem;
+}
+h3 {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+}
+h4, h5, h6 {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+/////////////
+// Body text
+li, 
+p {
+  margin-top: 0;
+  // margin-bottom: 0;
+}
+
+strong {
+  color: $strong-color;
+}
+
+//Page start
+#about-me{
+  margin-top: -0.3rem;
+}
+//Page end
+#content > p:nth-child(10){
+  margin-bottom: -0.3rem;
+}
+
+
+/////////////
+// Lists
+
+li, ul, ol, dl {
+
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-bottom: .5rem;
+}
+
+
+//////////////////////
+// Code
+code,
+pre {
+  font-family: $code-font-family;
+}
+code {
+  padding: .25em .5em;
+  font-size: 85%;
+}
+
+pre {
+  overflow: auto;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-size: .8rem;
+  line-height: 1.4;
+  background-color: $pre-background-color;
+
+  code {
+    padding: 0;
+    font-size: 100%;
+    color: inherit;
+    background-color: transparent;
+  }
+}  
+
+/////////////////////
+// Quotes
+
+blockquote {
+  padding: .5rem 1rem;
+  margin: .8rem 0;
+  color: $blockquote-color;
+  border-left: .25rem solid $blockquote-border-color;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+img {
+  display: block;
+  max-width: 65%;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+//////////////////////
+// Tables
+/*
+table {
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid $table-border-color;
+  border-collapse: collapse;
+
+  td,
+  th {
+   padding: .25rem .5rem;
+   border: 1px solid $table-border-color;
+  }
+
+  tr:nth-child(odd) td,
+  tr:nth-child(odd) th {
+    background-color: $table-odd-background-color;
+  }
+} */
+
+///////////////////////////////////
+// Logo
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ffffff;
+  margin: 2em 0;
+  padding: 0;
+  background: #ffffff;
+}
+
+#content{
+  margin: 0 auto;
+  padding: 40px;
+//  background-color: #0d293f;
+//  background-color: #0e2a40;
+//  background-color: #0f2b42;
+//  background-color: #102c43;
+  background-color: #102d44;
+//  background-color: #112e45;
+// background-color: #123046;
+//background-color: #1a3a51;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 0.4rem;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.logo {
+  color: $masthead-color;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.site-logo {
+  display: flex;
+  width: 50%; /* Adjusted width as a percentage */
+  max-width: 100px;
+  height: auto; // Keep the aspect ratio *
+  margin-right: 10px;
+}
+
+.site-title {
+
+  font-family: 'Overpass';
+  display: flex;
+  font-size: 200%;
+  color: $masthead-color;
+}
+
+.divider {
+  margin-top: 30px;
+  border-bottom: 8px solid #fff;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 13px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  color: $masthead-small-color;
+  margin: 0 8px;
+}
+
+.separator {
+  user-select: none;
+  font-weight: bold;
+  margin: 0 100px; /* Adjust the margin for the separator */
+  color: $masthead-small-color;
+}
+.container {
+  max-width: 53%;
+  padding-left:  1rem;
+  padding-right: 1rem;
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 1400px) {
+  .container {
+    max-width: 65%;
+  }
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 75%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .nav-links {
+  max-width: 85%;
+  padding-left:  1rem;
+  padding-right: 1rem;
+
+}
+
+  .container {
+    max-width: 85%;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  #content{
+    padding: 25px;
+  }
+.logo-container {
+    margin-bottom: 0; /* Adjusted margin for smaller screens */
+  }
+
+  .site-logo {
+    width: 35%;
+    max-width: 100px;
+    margin-right: 0;
+    margin-bottom: 3px; /* Adjusted margin for smaller screens */
+  }
+
+  .site-title {
+    font-size: 130%; /* Further reduced font size for smaller screens */
+    margin: 0; /* Further adjusted margin for smaller screens */
+  }
+  .divider {
+    margin-top: 15px;
+    border-bottom: 4px solid #fff;
+    margin-bottom: 10 px;
+  }
+
+  .separator {
+    margin: 0 50px; /* Adjust the margin for the separator on smaller screens */
+  }
+
+  .nav-links {
+  max-width: 97%;
+  padding-left:  1rem;
+  padding-right: 1rem;
+
+  }
+
+  .container {
+    max-width: 97%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  p{
+    font-size:100%
+  }
+  h1 {
+  font-size: 1.4rem;
+  }
+  
+  h2 {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  }
+  
+  h3 {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  }
+
+  h4, h5, h6 {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  }
+
+  pre {
+  overflow: auto;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 0.4rem;
+  font-size: .8rem;
+  line-height: 1;
+  background-color: $pre-background-color;
+
+  code {
+    padding: 0;
+    font-size: 100%;
+    color: inherit;
+    background-color: transparent;
+  }
+}  
+
+
+}
+///////////////////////////////////////////////////
+//  Masthead
+
+.masthead {
+  padding-top:    1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+
+ .masthead-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $masthead-color;
+  
+    a {
+ 
+      vertical-align: middle; /* Align the title vertically with the logo */
+      color: $masthead-color;
+      font-weight: 100;
+    }
+    
+    small {
+      color: $masthead-small-color;
+      font-size: 75%;
+      font-weight: 400;
+      letter-spacing: 0;
+    }
+  }
+}
+
+
+//////////////////////////
+// Posts
+
+.post {
+  margin-bottom: -0.3rem;
+
+  // note: only change margin for title,date if inside post block
+  .post-title {
+    margin-top: -0.3rem;
+  }
+
+  // Meta data line below post title
+  .post-date {
+    display: block;
+    margin-top:  -.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.post-title,
+.post-title a {
+  color: $post-title-color;
+}
+
+.post-date-link, .post-title {
+    vertical-align: middle;
+}
+
+.post-date {
+  color: $post-date-color;  
+}
+.post-date-link {
+  color: #fff; /* Set the color to white */
+}
+

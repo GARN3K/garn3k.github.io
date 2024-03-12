@@ -1,0 +1,42 @@
+###########
+# site.title, site.url, site.author.name
+
+title:   'GARN3K'
+author:
+  name:  'GARN3K'
+
+## note: 
+#  use site.path in your templates to make it work for both protocols e.g. http and https
+#  use site.url only inside the web feed template (e.g. requires full url incl. protocol)
+url:  'https://garn3k.github.io/'
+
+
+########
+# more settings
+
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+    #  input: GFM
+sass:
+  sass_dir: css
+  style:    expanded
+
+permalink: /:title
+
+exclude:
+- README.md
+
+collections:
+  ctfs:
+    output: true
+  blog:
+    output: true
+
+safe: true
+lsi: false
+
