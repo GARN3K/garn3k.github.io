@@ -342,7 +342,7 @@ hr {
   margin: 0 20%; /* Dostosowanie marginesu separatora na mniejszych ekranach */
 }
   .nav-links a {
-  margin: 0 10%;
+  margin: 0 5%;
   padding: 0;
   }
 
@@ -352,7 +352,7 @@ hr {
     padding-right: 0.5rem;
   }
   p{
-    font-size:90%
+    font-size:0.9rem;
   }
   h1 {
   font-size: 1.4rem;
@@ -374,7 +374,7 @@ hr {
   }
 
 li, ul, ol, dl {
-  font-size: 90%;
+  font-size: 0.9rem;
   margin-bottom: 0.1rem;
 }
 
@@ -383,7 +383,7 @@ li, ul, ol, dl {
   margin-top: 0;
   margin-bottom: 1rem;
   padding: 0.4rem;
-  font-size: .8rem;
+  font-size: .75rem;
   line-height: 1;
   background-color: $pre-background-color;
 
@@ -402,7 +402,7 @@ li, ul, ol, dl {
   }
 
   .post-title {
-    font-size: 95%;
+    font-size: 0.9rem;
   }
 
 }
