@@ -78,6 +78,8 @@ h4, h5, h6 {
 // Body text
 li, 
 p {
+  word-wrap: break-word; /* Fallback */
+  overflow-wrap: break-word; /* Standard property */
   margin-top: 0;
   // margin-bottom: 0;
 }
@@ -158,7 +160,7 @@ blockquote {
 
 img {
   display: block;
-  max-width: 65%;
+  max-width: 75%;
   border-radius: 5px;
   margin-left: auto;
   margin-right: auto;
@@ -348,7 +350,7 @@ hr {
     padding-right: 0.5rem;
   }
   p{
-    font-size:100%
+    font-size:90%
   }
   h1 {
   font-size: 1.4rem;
@@ -384,10 +386,19 @@ hr {
     color: inherit;
     background-color: transparent;
   }
-}  
+  }  
+
+  img {
+  margin: 0.5rem 0px;
+  max-width: 95%;
+  border-radius: 2px;
+  }
 
 
 }
+
+
+
 ///////////////////////////////////////////////////
 //  Masthead
 
