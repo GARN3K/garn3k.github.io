@@ -5,8 +5,7 @@ title: CTFs
 
 <h1>CTFs Writeups</h1>
 
-{% for post in site.ctfs %}
-
+{% for post in site.ctfs reversed %}
 <div>
   <a href="{{ site.path }}{{post.url}}">
     <span class="post-date-link">{{ post.date | date: "%b %-d, %Y" }} </span> »
