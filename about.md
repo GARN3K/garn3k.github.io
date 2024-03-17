@@ -9,9 +9,9 @@ permalink: /
 I'm Michał Zdulski, a 21-year-old Cybersecurity student based in Warsaw, Poland. Currently, I am an active member of [KN Cyber](https://kncyber.pl/) - a cybersecurity science club affiliated with the  Warsaw University of Technology - where I delivered a lecture on competitive participation in an international Capture The Flag (CTF) event. I'm interested in learning Reverse Engineering, Binary Exploitation and Web Penetration Testing. I am currently seeking a position that aligns with my passion and allows me to further develop my skills. 
 
 ## Education
-- Currently enrolled in the Cybersecurity program (6th semester) at the *Faculty of Electronics and Information Technology, Warsaw University of Technology* since 2023.
-- Completed three semesters of the Telecommunications program at the *Faculty of Electronics and Information Technology, Warsaw University of Technology* from 2021 to 2023.
-- Graduated from *XXVIII Liceum Ogólnokształcące im. Jana Kochanowskiego w Warszawie* in 2021.
+- Currently enrolled in the Cybersecurity program (6th semester) at the *Faculty of Electronics and Information Technology, Warsaw University of Technology* since Feb, 2023.
+- Completed three semesters of the Telecommunications program at the *Faculty of Electronics and Information Technology, Warsaw University of Technology* from Oct, 2021 to Feb, 2023.
+- Graduated from *XXVIII Liceum Ogólnokształcące im. Jana Kochanowskiego w Warszawie* in May, 2021.
 
 
 ## Projects I've completed
