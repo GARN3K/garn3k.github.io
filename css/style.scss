@@ -307,7 +307,7 @@ hr {
 
 @media only screen and (max-width: 768px) {
   #content{
-    padding: 25px;
+    padding: 20px;
   }
 .logo-container {
     margin-bottom: 0; /* Adjusted margin for smaller screens */
@@ -330,22 +330,24 @@ hr {
     margin-bottom: 10 px;
   }
 
-  .separator {
-    margin: 0 50px; /* Adjust the margin for the separator on smaller screens */
-  }
+.nav-links {
+  display: flex;
+  justify-content: center; /* Centruje elementy wzdłuż osi poziomej */
+  align-items: center; /* Centruje elementy wzdłuż osi pionowej */
+  max-width: 100%; /* Zmiana na 100% zamiast 94% */
+  padding: 0; /* Usunięcie niepotrzebnych paddingów */
+}
 
-  .nav-links {
-  max-width: 90%;
-  padding-left:  0.4rem;
-  padding-right: 0.4rem;
-  }
-
+.separator {
+  margin: 0 20%; /* Dostosowanie marginesu separatora na mniejszych ekranach */
+}
   .nav-links a {
-  margin: 0 3px;
+  margin: 0 10%;
+  padding: 0;
   }
 
   .container {
-    max-width: 97%;
+    max-width: 94%;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
@@ -371,6 +373,11 @@ hr {
   font-size: 0.8rem;
   }
 
+li, ul, ol, dl {
+  font-size: 90%;
+  margin-bottom: 0.1rem;
+}
+
   pre {
   overflow: auto;
   margin-top: 0;
@@ -389,11 +396,14 @@ hr {
   }  
 
   img {
-  margin: 0.5rem 0px;
-  max-width: 95%;
-  border-radius: 2px;
+    margin: 0.5rem 0px;
+    max-width: 95%;
+    border-radius: 2px;
   }
 
+  .post-title {
+    font-size: 95%;
+  }
 
 }
 
@@ -437,6 +447,7 @@ hr {
 
   // note: only change margin for title,date if inside post block
   .post-title {
+    font-size: 100%;
     margin-top: -0.3rem;
   }
 
