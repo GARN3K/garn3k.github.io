@@ -15,7 +15,7 @@
 
 html {
   font-family: $font-family;
-  font-size:   20px;
+  font-size:   1.25rem;
   line-height: 1.5;
 }
 
@@ -447,7 +447,6 @@ li, ul, ol, dl {
 
   // note: only change margin for title,date if inside post block
   .post-title {
-    font-size: 100%;
     margin-top: -0.3rem;
   }
 
